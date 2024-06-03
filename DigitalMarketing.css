@@ -1,0 +1,243 @@
+/* Styles for the What We Do section slider */
+.carousel-item img {
+    max-height: 600px; 
+    max-width: 400px;
+    margin: auto;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.carousel-item img:hover {
+    transform: scale(1.05);
+    opacity: 0.7;
+}
+
+.carousel-inner .carousel-item .row {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-inner .carousel-item .col-md-3 {
+    padding: 0 5px;
+}
+/* Position black dots below images on the left side */
+/* Adjust position of carousel indicators (black dots) */
+.carousel-indicators {
+position: absolute;
+bottom: 10px; 
+left: 10px; 
+z-index: 1000; 
+}
+
+/* Adjust style of black dots */
+.carousel-indicators li {
+background-color: black;
+width: 10px;
+height: 10px;
+border-radius: 50%;
+margin: 5px; 
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.carousel-indicators .active {
+background-color: red; 
+border: 2px solid red;
+width: 12px; 
+height: 12px; 
+transition: all 0.5s ease;
+}
+
+.hover-img-wrapper {
+    position: relative;
+    display: inline-block;
+}
+.hover-img-wrapper img {
+    width: 100%;
+    transition: opacity 0.3s;
+}
+.hover-img-wrapper .hover-img-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: rgba(229, 7, 7, 0.895);
+    padding: 9px;
+    display: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.hover-img-wrapper:hover img {
+    opacity: 0.9;
+}
+.hover-img-wrapper:hover .hover-img-link {
+    display: block;
+}
+/* Add hover image replacement */
+.hover-img-wrapper:hover .hover-replace {
+    display: block;
+}
+.hover-replace {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    opacity: 1;
+}
+.custom-sidebar {
+height: 100%;
+position: relative;
+}
+
+
+/* Center the titles vertically within the sidebar */
+
+
+.sidebar-images {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: calc(100% * 3); 
+}
+.sidebar-images img {
+    width: 62%; 
+    cursor: pointer;
+}
+
+.card-container {
+display: flex;
+gap: 1px;
+margin-top: 103px; 
+justify-content: flex-end;
+}
+.card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 8.5px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card h2 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+}
+.card p {
+    margin: 10px 0 0;
+    font-size: 1em;
+    color: #777;
+}
+
+#whatWeDoCarousel {
+    overflow: hidden; 
+}
+#whatWeDoCarousel .carousel-inner {
+    display: flex; 
+    transition: transform 0.5s ease;
+}
+.carousel-item {
+    flex: 0 0 100%; 
+}
+/* Adjust position of carousel indicators */
+.carousel-indicators {
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+.card-container1 {
+display: flex;
+gap: 20px;
+}
+
+.card-1 {
+background-color: white;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+padding: 30px;
+text-align: center;
+transition: transform 0.3s, box-shadow 0.3s;
+cursor: pointer;
+}
+
+.card-1:hover {
+transform: scale(1.05);
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-1 h2 {
+margin: 0;
+font-size: 2em;
+color: #333;
+}
+
+.card-1 p {
+margin: 10px 0 0;
+font-size: 1em;
+color: #777;
+}
+.card::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgb(169, 33, 33);
+opacity: 0;
+transition: opacity 0.3s ease;
+z-index: 1; 
+pointer-events: none; 
+}
+
+.card:hover::before {
+opacity: 0.6; 
+}
+
+.card-1::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(238, 9, 9, 0.971);
+opacity: 0;
+transition: opacity 0.3s ease;
+z-index: 1; 
+pointer-events: none; 
+}
+
+.card-1:hover::before {
+opacity: 0.5; 
+}
+.dots-container {
+display: flex;
+justify-content: left;
+margin-top: 20px;
+}
+
+.dot {
+height: 10px;
+width: 10px;
+background-color: black;
+border-radius: 50%;
+margin: 0 5px;
+cursor: pointer;
+}
+
+.dot.active {
+background-color: red; 
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 1;
+}
